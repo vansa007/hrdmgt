@@ -90,7 +90,7 @@
 
                                 <div class="col-md-2">
                                     <div class="form-group">
-                                        <label for="couName">Generation <span style="color: red">*</span></label>
+                                        <label for="couName">GENERATION <span style="color: red">*</span></label>
                                         <select class="form-control" id="couGeneration" name="couGeneration" ng-model="genToInsert">
                                         	<option ng-repeat="gen in generations | orderBy:'-GENID'" value="{{gen.GENID}}">{{gen.GENNAME}}</option>
                                         </select>
@@ -106,7 +106,7 @@
 
                                 <div class="col-md-2">
                                     <div class="form-group">
-                                        <label for="couDate">Start Date <span style="color: red">*</span></label>
+                                        <label for="couDate">START<span style="color: red">*</span></label>
                                          <div class="input-group">
 										<input type="text" ng-model="modCouStartDate" class="form-control" placeholder="year-month-day" id="modCouStartDate" required name="modCouStartDate">
 											<span class="input-group-addon bg-danger b-0 text-white"><i class="icon-calender"></i></span>
@@ -116,7 +116,7 @@
                                 
                                 <div class="col-md-2">
                                     <div class="form-group">
-                                        <label for="couDate">End Date <span style="color: red">*</span></label>
+                                        <label for="couDate">END<span style="color: red">*</span></label>
                                         <div class="input-group">
 										<input type="text" ng-model="modCouEndDate" class="form-control" placeholder="year-month-day" id="modCouEndDate" required name="modCouEndDate">
 											<span class="input-group-addon bg-success b-0 text-white"><i class="icon-calender"></i></span>
@@ -126,14 +126,14 @@
 
                                 <div class="col-md-2">
                                     <div class="form-group">
-                                        <label for="couColor">Color <span style="color: red">*</span></label>
+                                        <label for="couColor">COLOR <span style="color: red">*</span></label>
                                         <input type="color" ng-model="modCouColor" name="modCouColor" required class="form-control" id="couColor">
                                     </div>
                                 </div>
 
                                 <div class="col-md-2">
                                     <div class="form-group text-center m-b-0">
-                                        <label>Click here to Add</label>
+                                        <label>Click to Add</label>
                                         <button id="saveCourse" ng-click="addCourse()" class="btn btn-primary col-md-12 waves-effect waves-light" type="button"
                                         ng-disabled="frmAddCourse.couGeneration.$invalid || frmAddCourse.modCouName.$invalid || frmAddCourse.modCouStartDate.$invalid || frmAddCourse.modCouEndDate.$invalid || frmAddCourse.modCouColor.$invalid">Save</button>
                                     </div>
